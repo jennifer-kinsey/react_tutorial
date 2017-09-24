@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170923064705) do
+ActiveRecord::Schema.define(version: 20170924055426) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,10 +20,10 @@ ActiveRecord::Schema.define(version: 20170923064705) do
     t.string   "liftname"
     t.boolean  "ismetric"
     t.integer  "weightlifted"
-    t.integer  "repspeformed"
     t.integer  "onerm"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.integer  "repsperformed"
   end
 
 end

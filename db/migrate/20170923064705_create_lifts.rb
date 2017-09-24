@@ -5,7 +5,7 @@ class CreateLifts < ActiveRecord::Migration[5.0]
       t.string :liftname
       t.boolean :ismetric
       t.integer :weightlifted
-      t.integer :repspeformed
+      t.integer :repsperformed
       t.integer :onerm
 
       t.timestamps
