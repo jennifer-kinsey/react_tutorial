@@ -17,7 +17,7 @@ coefficients = {
     @setState ismetric: !@state.ismetric
   calculateOneRm: ->
     if @state.weightlifted and @state.repsperformed
-      @state.onerm = @state.weightlifted / coefficients[@state.repsperformed]
+        @state.onerm = @state.weightlifted / coefficients[@state.repsperformed]
     else
       0
   valid: ->
@@ -50,10 +50,6 @@ coefficients = {
           name: 'liftname'
           value: @state.liftname
           onChange: @handleValueChange
-      React.DOM.button
-        className: 'btn btn-primary'
-        onClick: @toggleUnit
-        'Metric = ' + @state.ismetric.toString()
       React.DOM.div
         className: 'form-group'
         React.DOM.input
@@ -74,6 +70,10 @@ coefficients = {
           name: 'repsperformed'
           value: @state.repsperformed
           onChange: @handleValueChange
+      React.DOM.button
+        className: 'btn btn-primary'
+        onClick: @toggleUnit
+        'Metric = ' + @state.ismetric.toString()
       React.DOM.button
         type: 'submit'
         className: 'btn btn-primary'
